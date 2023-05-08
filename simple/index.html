@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEA ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll"><div id="scroll_stat"></div></div>
+    <div class="top-container">
+        <div class="top">
+        
+        <div id="name">
+            <img id="firstname" src="./img/deepak.png" alt=""><br><img id="secondname" src="./img/silaych.png" alt="">
+        </div>
+        <div id="pic">
+            <img src="./img/pic2.png" alt="">
+        </div>
+    </div>
+
+    </div>
+    <div class="main">
+        <div id="intro" class="main-div main-div-1">
+            <span>1</span>
+            <h1>Introduction</h1>
+            <div>
+                <ul id="list1">
+                    <li>Name</li>
+                    <li>Roll No</li>
+                    <li>Branch</li>
+                    <li>Home Place</li>
+                    <li>Hobbies</li>
+                </ul>
+                <ul id="list2">
+                    <li>Deepak Silaych</li>
+                    <li>22B0660</li>
+                    <li>Civil Department</li>
+                    <li>Pilani </li>
+                    <li>Swimming,Coding</li>
+                </ul>
+            </div>
+        </div>
+        <div id="motivation" class="main-div main-div-2">
+            <span>2</span>
+            <h1>Motivation for the Post</h1>
+            <div>
+                I am passionate about programming and keep looking forward to try my hands on different domains of coding. Web development is one of them. Being a part of the web secretary 
+                could provide opportunities to work on exciting projects, gain experience in the 
+                field and motivation to get more knowledge. <br> It provides a platform for me to learn 
+                from those who have more knowledge and experience in the field.<br>
+                As a being part of department council, I will get to bond with allot of 
+                seniors and upcoming batchmates of the department which is the biggest motivation 
+                of me for this post. <br>
+                I will get to make relationships with allot of seniors as well as upcoming
+                batchmates in the department, this is the primary reason why I am motivated to 
+                take up this position. It provides a platform for me to learn from those who have 
+                more knowledge and experience in the field, and also to guide and mentor those who 
+                are just starting out. Building these connections and relationships within the 
+                department can lead to a more supportive and collaborative environment, where 
+                everyone can work together towards common goals and achieve success.
+                </div>
+        </div>
+        <div id="expirence" class="main-div main-div-1">
+            <span>3</span>
+            <h1>Past Experience</h1>
+            <div>
+                I have been involved in coding during my school year,  During 7th-10th I had learnt basics of multiple languages including Python, Java, CPP, SQL, JavaScript, very basics of Numpy and Pandas some as part of curriculum of school other as side interest <br>(Though I don’t remember most of it now). 
+                <br> I have done some basic web projects during annual science exhibition. <br> <br>
+                In insti, I got back on coding after break during JEE with CS101.
+                And continued this by participating in Hacker rank, Devcom Projects (Full Stack Web Dev) and Code wars. 
+            </div>
+        </div>
+        <div id="features" class="main-div main-div-2">
+            <span>4</span>
+            <h1>What new feature you can add to the existing website and its Plan of Action</h1>
+            <div></div>
+        </div>
+        <div id="contact" class="main-div main-div-1">
+            <span>5</span>
+            <h1>Contact Details</h1>
+            <div>
+                <ul id="list1">
+                    <li>Contact No</li>
+                    <li>E-Mail</li>
+                    <li>IITB Mail</li>
+                </ul>
+                <ul id="list2">
+                    <li>9001352750</li>
+                    <li>deepaksilaych@gmail.com</li>
+                    <li>22b0660@iitb.ac.in</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+   window.onscroll = function(){
+  var winScroll = document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100
+  document.getElementById("scroll_stat").style.width = scrolled + "%";
+  document.getElementById("name").style.marginRight = scrolled + "px";
+  document.getElementById("name").style.marginTop = -1*scrolled + "%";
+  document.getElementById("firstname").style.marginBottom = 0.1*scrolled + "%";
+  document.getElementById("pic").style.marginTop = -1*scrolled + "%";
+
+  
+}
+</script>
+</html>

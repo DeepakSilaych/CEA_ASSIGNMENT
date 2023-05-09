@@ -1,0 +1,22 @@
+<div class="top-container">
+    <div class="top">
+    
+    <div id="name">
+        <img id="firstname" src="../../assets/deepak.png" alt=""><br><img id="secondname" src="./src/assets/silaych.png" alt="">
+    </div>
+    <div id="pic">
+        <img src="../../assets/pic2.png" alt="">
+    </div>
+</div>
+<script>
+    window.onscroll = function(){
+        var winScroll = document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100
+        document.getElementById("scroll_stat").style.width = scrolled + "%";
+        document.getElementById("name").style.marginRight = scrolled + "px";
+        document.getElementById("name").style.marginTop = -1*scrolled + "%";
+        document.getElementById("firstname").style.marginBottom = 0.1*scrolled + "%";
+        document.getElementById("pic").style.marginTop = -1*scrolled + "%";
+    }
+</script>

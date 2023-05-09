@@ -9,5 +9,17 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    window.onscroll = function(){
+        var winScroll = document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100
+        document.getElementById("scroll_stat").style.width = scrolled + "%";
+        document.getElementById("name").style.marginRight = scrolled + "px";
+        document.getElementById("name").style.marginTop = -1*scrolled + "%";
+        document.getElementById("firstname").style.marginBottom = 0.3*scrolled + "%";
+        document.getElementById("pic").style.marginLeft = -1*scrolled + "%";
+    }
+</script>
 </body>
 </html>

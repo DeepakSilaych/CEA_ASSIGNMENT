@@ -14,7 +14,7 @@
 
 #scroll{
     width: 100%;
-    height: 5px;
+    height: 7px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@
     background-color:orange;
     height: 100%;
     width: 0;
-    z-index: 10;
+    z-index: 99;
 }
 
 .top-container{
@@ -68,7 +68,6 @@
 }
 
 .main-div span{
-    
     grid-row-start: 1;
     grid-row-end: 3;
     width: max-content;
@@ -120,7 +119,7 @@
 }
 
 
-#motivation div, #expirence div{
+#motivation div, #expirence div,#features div{
     font: 150%  Verdana, Arial, Helvetica, sans-serif;
     line-height: 220%; 
     font-weight: bold; 
@@ -135,4 +134,56 @@
 
 #list1 li{
     font-weight: 600;
+}
+
+
+@media (max-width: 910px) {
+    .top-container{
+        display: none;
+    }
+
+    *{
+        font-size: .95em;  
+    }
+    
+    .main-div span{
+        font-size: 200px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    *{
+        font-size: .9em;  
+    }
+    .main-div span{
+        font-size: 100px;
+        padding: 1px;
+    }
+
+    .main-div h1{
+        font-size: 40px;
+    }
+
+    .main-div div{
+        padding:0;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 450px){
+    .main-div span{
+        font-size: 60px;
+    }
+
+    .main-div h1{
+        font-size: 30px;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
 }
